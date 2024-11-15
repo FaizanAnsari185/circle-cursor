@@ -16,18 +16,13 @@ const MovingDot = () => {
     <>
       <div
         style={{
-          top: mouse.y, 
+          top: mouse.y,
           left: mouse.x,
-          position: "absolute",
-          zIndex: 1000,
-          width: "10px",
-          height: "10px",
-          backgroundColor: "black",
-          borderRadius: "50%",
-          transform: "translate(-50%, -50%)",
-          transition: "cubic-bezier(0.19, 1, 0.22, 1) 1s",
+          transition: "cubic-bezier(0.19, 1, 0.22, 1) 1s"
         }}
+        className="absolute z-50 bg-white h-2.5 w-2.5 transform -translate-x-1/2 -translate-y-1/2 rounded-full mix-blend-difference"
       ></div>
+      
     </>
   );
 };
